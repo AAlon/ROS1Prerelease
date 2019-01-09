@@ -12,8 +12,8 @@ env:
   matrix:
     - ROS_DISTRO="kinetic" ROS_REPOSITORY_PATH=http://packages.ros.org/ros/ubuntu
     - ROS_DISTRO="kinetic" PRERELEASE=true
-    - ROS_DISTRO="lunar"   PRERELEASE=true
     - ROS_DISTRO="lunar"   ROS_REPOSITORY_PATH=http://packages.ros.org/ros/ubuntu
+    - ROS_DISTRO="lunar"   PRERELEASE=true
     - ROS_DISTRO="melodic" ROS_REPOSITORY_PATH=http://packages.ros.org/ros/ubuntu
     - ROS_DISTRO="melodic" PRERELEASE=true
 install:
