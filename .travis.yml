@@ -17,6 +17,8 @@ env:
     - ROS_DISTRO="melodic" ROS_REPOSITORY_PATH=http://packages.ros.org/ros/ubuntu
     - ROS_DISTRO="melodic" PRERELEASE=true
 install:
+  - git clone https://github.com/aws-robotics/utils-common.git utils-common
+  - git clone https://github.com/aws-robotics/utils-ros1.git utils-ros1
   - git clone https://github.com/ros-industrial/industrial_ci.git .ros_ci
 script:
   - .ros_ci/travis.sh
