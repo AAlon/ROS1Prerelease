@@ -22,7 +22,6 @@ install:
   - git clone https://github.com/aws-robotics/cloudwatchmetrics-ros1 cloudwatchmetrics-ros1
   - git clone https://github.com/aws-robotics/health-metrics-collector-ros1 health-metrics-collector-ros1
   - git clone https://github.com/aws-robotics/kinesisvideo-common kinesisvideo-common
-  - cd kinesisvideo-common && git checkout 9a09c1a07085ec5bbe3a30f1bd9d527bc1ae83c2 && cd ..
   - git clone -b refactor-streamer-add-tests https://github.com/AAlon/kinesisvideo-ros1 kinesisvideo-ros1
   - git clone https://github.com/aws-robotics/kinesisvideo-encoder-common kinesisvideo-encoder-common
   - git clone https://github.com/aws-robotics/kinesisvideo-encoder-ros1 kinesisvideo-encoder-ros1
