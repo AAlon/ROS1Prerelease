@@ -17,7 +17,7 @@ env:
 install:
   - git clone https://github.com/AAlon/utils-common.git utils-common
   - git clone https://github.com/aws-robotics/utils-ros1.git utils-ros1
-  - git clone https://github.com/aws-robotics/kinesisvideo-common kinesisvideo-common
+  - git clone https://github.com/AAlon/kinesisvideo-common kinesisvideo-common
   - git clone https://github.com/aws-robotics/kinesisvideo-ros1 kinesisvideo-ros1
   - git clone https://github.com/aws-robotics/kinesisvideo-encoder-common kinesisvideo-encoder-common
   - git clone https://github.com/aws-robotics/kinesisvideo-encoder-ros1 kinesisvideo-encoder-ros1
