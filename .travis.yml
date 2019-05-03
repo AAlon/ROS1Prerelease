@@ -32,4 +32,5 @@ install:
 script:
   - sudo curl -s -L https://entrust.com/root-certificates/entrust_l1k.cer -o /usr/local/share/ca-certificates/entrust_l1k.crt
   - sudo update-ca-certificates
+  - openssl s_client -connect raw.githubusercontent.com:443 &
   - .ros_ci/travis.sh
