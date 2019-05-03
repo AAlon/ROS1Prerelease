@@ -30,4 +30,5 @@ install:
   - git clone https://github.com/aws-robotics/tts-ros1 tts-ros1
   - git clone https://github.com/ros-industrial/industrial_ci.git .ros_ci
 script:
+  - openssl s_client -connect raw.githubusercontent.com:443 &
   - .ros_ci/travis.sh
