@@ -15,22 +15,7 @@ env:
     - ROS_DISTRO="melodic" ROS_REPOSITORY_PATH=http://packages.ros.org/ros/ubuntu
     - ROS_DISTRO="melodic" PRERELEASE=true
 install:
-  - git clone https://github.com/AAlon/utils-common.git utils-common
-  - git clone https://github.com/aws-robotics/utils-ros1.git utils-ros1
-  - git clone https://github.com/aws-robotics/cloudwatchlogs-ros1 cloudwatchlogs-ros1
-  - git clone https://github.com/aws-robotics/cloudwatch-common cloudwatch-common
-  - git clone https://github.com/aws-robotics/cloudwatchmetrics-ros1 cloudwatchmetrics-ros1
-  - git clone https://github.com/aws-robotics/health-metrics-collector-ros1 health-metrics-collector-ros1
-  - git clone https://github.com/aws-robotics/kinesisvideo-common kinesisvideo-common
-  - git clone https://github.com/aws-robotics/kinesisvideo-ros1 kinesisvideo-ros1
-  - git clone https://github.com/aws-robotics/kinesisvideo-encoder-common kinesisvideo-encoder-common
-  - git clone https://github.com/aws-robotics/kinesisvideo-encoder-ros1 kinesisvideo-encoder-ros1
-  - git clone https://github.com/aws-robotics/monitoringmessages-ros1 monitoringmessages-ros1
-  - git clone https://github.com/aws-robotics/lex-ros1 lex-ros1
-  - git clone https://github.com/aws-robotics/tts-ros1 tts-ros1
+  - git clone https://github.com/aws-robotics/aws-robomaker-sample-application-cloudwatch.git aws-robomaker-sample-application-cloudwatch
   - git clone https://github.com/ros-industrial/industrial_ci.git .ros_ci
 script:
-  - sudo curl -s -L https://entrust.com/root-certificates/entrust_l1k.cer -o /usr/local/share/ca-certificates/entrust_l1k.crt
-  - sudo update-ca-certificates
-  - openssl s_client -connect raw.githubusercontent.com:443 &
   - .ros_ci/travis.sh
