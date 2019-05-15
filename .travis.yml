@@ -15,12 +15,7 @@ env:
     - ROS_DISTRO="melodic" ROS_REPOSITORY_PATH=http://packages.ros.org/ros/ubuntu
     - ROS_DISTRO="melodic" PRERELEASE=true
 install:
-  - git clone https://github.com/aws-robotics/aws-robomaker-sample-application-helloworld.git aws-robomaker-sample-application-helloworld
-  - git clone https://github.com/aws-robotics/aws-robomaker-sample-application-cloudwatch.git aws-robomaker-sample-application-cloudwatch
-  - git clone https://github.com/aws-robotics/aws-robomaker-sample-application-voiceinteraction.git aws-robomaker-sample-application-voiceinteraction
-  - find . -name "aws_robomaker_simulation_common" | head -n 1 | xargs rm -rf
-  - find . -name "turtlebot3_description_reduced_mesh" | head -n 1 | xargs rm -rf
-  - git clone https://github.com/aws-robotics/aws-robomaker-sample-application-persondetection.git aws-robomaker-sample-application-persondetection
+  - git clone https://github.com/aws-robotics/aws-robomaker-sample-application-deepracer.git aws-robomaker-sample-application-deepracer
   - git clone https://github.com/ros-industrial/industrial_ci.git .ros_ci
 script:
   - .ros_ci/travis.sh
