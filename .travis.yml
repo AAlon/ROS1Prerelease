@@ -22,7 +22,7 @@ env:
     - ROS_DISTRO=melodic ROS_VERSION=1 BRANCH=release-v2
     - ROS_DISTRO=dashing ROS_VERSION=2 BRANCH=release-v2
 install:
-  - git clone -b ${BRANCH} https://github.com/aws-robotics/utils-common.git utils-common
+  - git clone -b ${BRANCH} https://github.com/aws-robotics/kinesisvideo-encoder-common.git kinesisvideo-encoder-common
   - git clone https://github.com/AAlon/travis-scripts .ros_ci
 script:
   - .ros_ci/ce_build.sh
