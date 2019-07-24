@@ -17,9 +17,9 @@ env:
 install:
   - git clone -b catkin_FOUND https://github.com/AAlon/utils-common.git utils-common
   - git clone https://github.com/aws-robotics/utils-ros1.git utils-ros1
-  - git clone https://github.com/aws-robotics/cloudwatchlogs-ros1 cloudwatchlogs-ros1
+  - git clone -b find-std_srvs https://github.com/aws-robotics/cloudwatchlogs-ros1 cloudwatchlogs-ros1
   - git clone https://github.com/aws-robotics/cloudwatch-common cloudwatch-common
-  - git clone https://github.com/aws-robotics/cloudwatchmetrics-ros1 cloudwatchmetrics-ros1
+  - git clone -b find-std_srvs https://github.com/aws-robotics/cloudwatchmetrics-ros1 cloudwatchmetrics-ros1
   - git clone https://github.com/aws-robotics/health-metrics-collector-ros1 health-metrics-collector-ros1
   - git clone https://github.com/aws-robotics/monitoringmessages-ros1 monitoringmessages-ros1
   - git clone https://github.com/ros-industrial/industrial_ci.git .ros_ci
