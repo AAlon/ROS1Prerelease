@@ -15,7 +15,7 @@ env:
     - ROS_DISTRO="melodic" ROS_REPOSITORY_PATH=http://packages.ros.org/ros/ubuntu
     - ROS_DISTRO="melodic" PRERELEASE=true
 install:
-  - git clone -b ros-build-unstable-fix-1 https://github.com/aws-robotics/utils-common.git utils-common
+  - git clone https://github.com/aws-robotics/utils-common.git utils-common
   - git clone https://github.com/aws-robotics/utils-ros1.git utils-ros1
   - git clone https://github.com/aws-robotics/cloudwatchlogs-ros1 cloudwatchlogs-ros1
   - git clone https://github.com/aws-robotics/cloudwatch-common cloudwatch-common
